@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #171111;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  border-top: 8px solid #e97a11;
+  padding: 48px 32px;
+  text-align: center;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  max-width: 220px;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 42px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.tagline {
+  color: #1693d2;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 12px 0 0;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background: #e97a11;
+  margin: 32px auto;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.services {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 36px;
+  max-width: 420px;
+}
+
+.services li {
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact {
+  background: #171111;
+  color: white;
+  padding: 28px 22px;
+  margin-top: 28px;
+}
+
+.contact h2 {
+  color: #e97a11;
+  margin-top: 0;
+}
+
+.contact p {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 36px 22px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .tagline {
+    font-size: 19px;
+  }
+}

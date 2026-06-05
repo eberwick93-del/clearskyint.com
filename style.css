@@ -7,8 +7,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #171111;
   background:
-    linear-gradient(rgba(22, 147, 210, 0.35), rgba(22, 147, 210, 0.35)),
-   url("./background.png");
+    linear-gradient(135deg, rgba(5, 31, 55, 0.82), rgba(22, 147, 210, 0.38)),
+    url("./background.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -19,126 +19,138 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 24px;
+  padding: 64px 20px;
 }
 
 .card {
   width: 100%;
-  max-width: 680px;
-  background: rgba(255, 255, 255, 0.94);
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.88);
   border-top: 8px solid #e97a11;
-  padding: 48px 32px;
+  border-radius: 16px;
+  padding: 44px 40px;
   text-align: center;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .logo {
-  max-width: 550px;
+  max-width: 380px;
   width: 100%;
-  margin-bottom: 10px;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 26px;
-  background: #e97a11;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 800;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 16px 34px;
-  border-radius: 6px;
-}
-
-.cta-button:hover {
-  background: #cf6808;
-}
-
-h1 {
-  margin: 0;
-  font-size: 42px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .tagline {
   color: #1693d2;
-  font-size: 22px;
-  font-weight: 700;
-  margin: 12px 0 0;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 8px 0 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 16px 28px;
+  font-size: 16px;
+}
+
+.button.primary {
+  background: #e97a11;
+  color: #ffffff;
+}
+
+.button.secondary {
+  background: #171111;
+  color: #ffffff;
+  border: 2px solid #1693d2;
 }
 
 .divider {
-  width: 80px;
-  height: 4px;
+  width: 90px;
+  height: 5px;
   background: #e97a11;
-  margin: 32px auto;
+  margin: 34px auto;
 }
 
 h2 {
-  font-size: 22px;
-  margin-bottom: 18px;
+  font-size: 26px;
+  margin-bottom: 24px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.services {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto 36px;
-  max-width: 420px;
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 0 auto 30px;
 }
 
-.services li {
-  padding: 14px 0;
-  border-bottom: 1px solid #e5e5e5;
-  font-size: 18px;
-  font-weight: 600;
+.services-grid div {
+  background: rgba(255, 255, 255, 0.78);
+  border-left: 5px solid #1693d2;
+  padding: 16px 18px;
+  font-size: 17px;
+  font-weight: 800;
+  text-align: left;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
 }
 
-.contact {
-  background: #171111;
-  color: white;
-  padding: 28px 22px;
-  margin-top: 28px;
+.services-grid div:nth-child(even) {
+  border-left-color: #e97a11;
 }
 
-.contact h2 {
-  color: #e97a11;
-  margin-top: 0;
+.footer-line {
+  margin: 28px auto 0;
+  max-width: 620px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #333333;
+  font-weight: 700;
 }
 
-.contact p {
-  margin-bottom: 0;
-  font-size: 18px;
-}
-
-@media (max-width: 600px) {
-  .card {
-    padding: 36px 22px;
+@media (max-width: 700px) {
+  .page {
+    padding: 32px 14px;
   }
 
-  h1 {
-    font-size: 30px;
+  .card {
+    padding: 34px 22px;
+  }
+
+  .logo {
+    max-width: 340px;
   }
 
   .tagline {
-    font-size: 19px;
+    font-size: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 22px;
   }
 }
-.phone a {
-  color: white;
-  text-decoration: none;
-  font-size: 32px;
-  font-weight: 800;
-}
-
-.phone::before {
-  content: "☎";
-  color: #e97a11;
-  margin-right: 12px;
-  font-size: 28px;
-}
-

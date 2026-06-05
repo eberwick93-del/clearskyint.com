@@ -23,22 +23,12 @@ body {
 }
 
 .card {
-  width: 100%;
-  max-width: 900px;
-  background: rgba(255, 255, 255, 0.88);
-  border-top: 8px solid #e97a11;
-  border-radius: 16px;
-  padding: 44px 40px;
-  text-align: center;
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  max-width: 860px;
+  padding: 36px 38px;
 }
 
 .logo {
-  max-width: 380px;
-  width: 100%;
-  margin-bottom: 16px;
+  max-width: 300px;
 }
 
 .tagline {

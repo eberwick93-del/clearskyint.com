@@ -36,7 +36,10 @@ body {
 }
 
 .logo {
-  max-width: 300px;
+  max-width: 420px;
+  width: 100%;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,.25));
 }
 
 .tagline {
